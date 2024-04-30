@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body style="background-image: url('{% static "images/home-car.jpg" %}');
+             background-size: cover;
+             background-position: center;
+             background-repeat: no-repeat;
+             margin: 0;
+             padding: 0;
+             font-family: calibri, sans-serif;">
+
+  <div style="text-align: center; padding: 100px 0; color: #fff;">
+    <h1 style="color: white;">VEHICLE SERVICE MANAGEMENT</h1>
+  </div>
+
+  {% include "vehicle/navbar.html" %}
+
+</body>
+
+</html>

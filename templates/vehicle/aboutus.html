@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .image-container img {
+      width: 290px;
+      height: 200px;
+    }
+  </style>
+
+  <title></title>
+</head>
+
+<body>
+
+  {% include "vehicle/navbar.html" %}
+  <br><br>
+  <center>
+    <h3 class='alert alert-success' style="margin-bottom:0px;">About Us !</h3>
+  </center>
+  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+    <h1 class="display-4"><b>OUR DEVELOPERS</b></h1>
+    <p style="text-align: center;" class="lead">The bridge between design and data
+    </p>
+    <div class="image-container">
+      <div>
+        <img src="{% static 'images/MyPhoto.png' %}" alt="My image" />
+        <p style="text-align: center;"><p><b>KURRA DEEPAK</b></p>Full-Stack Developer</p>
+      </div>
+      <div>
+        <img src="{% static 'images/rekha.jpg' %}" alt="My image" />
+        <p style="text-align: center;"><p><b>MANTENA REKHADEVI</b></p>Front-End Developer</p>
+      </div>
+      <div>
+        <img src="{% static 'images/IMG_2277.JPG' %}" alt="My image" />
+        <p style="text-align: center;"><p><b>SAAKSHI MAHANTESH ALASE</b></p>Back-End Developer</p>
+      </div>
+    </div>
+    <p style="text-align: center;" class="lead">
+      <b>We started doing a project Under the guidance of sir Dr.B Venkateswarlu</b>
+<div>
+        <img src="{% static 'images/Venkateswarlu sir.jpg' %}" alt="My image" width="250" height="250" />
+        <p style="text-align: center;"><p><b>Dr.B Venkateswarlu</b></p>ASSISTANT PROFESSOR</p>
+      </div>
+    </p>
+    <hr class="my-4">
+    <p>Explore our Website.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
+    </p>
+  </div>
+
+</body>
+
+</html>
